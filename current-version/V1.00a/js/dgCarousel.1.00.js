@@ -14,7 +14,6 @@
 		  'liHeight'	: 150,
 		  'liPadding'	: 5,
 		  'stackDistance' : 3,
-		  'backgroundColor': 'blue',
 		  'zIndex': 999
 		}, options);
 		

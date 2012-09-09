@@ -2,45 +2,29 @@
 /* CSS Document */
 .dgCarousel
 {
-	position: relative;
-	font-size: 12px;
+	position: relative !important;
 }
 
 .dgCarousel li
 {
-	display:inline-block;
-	overflow:hidden;
-	position: absolute;
-	top:0;
-	border: 1px solid black;
+	display:inline-block !important;
+	overflow:hidden !important;
+	position: absolute !important;
+	/* Change any item below as you see fit */
+	border: 1px solid black; 
 	background: #FFF;
-	border-radius: 4px;
+	border-radius: 4px;	
 	-moz-border-radius: 4px;
-}
-
-.dgCarousel li h1
-{
-	font-size: 13px;
-	font-weight:bold;
-	padding: 1px;
-	margin: 0 0 1px 0;
-	text-align:center;
-
-}
-
-.dgCarousel li p
-{
-	padding: 2px;
-	margin: 0 0 1px 0;
 }
 
 .dgCarousel li .mask
 {
+	position:absolute !important;
+	width: 100% !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	/* Change any item below as you see fit */
 	background-color:#FFF;
-	position:absolute;
-	width: 100%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-
 }
+

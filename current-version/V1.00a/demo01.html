@@ -2,23 +2,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Demo01</title>
 <link href="css/demo01.css" rel="stylesheet" type="text/css" />
 <link href="css/dgCarousel-base.css" rel="stylesheet" type="text/css" />
 <script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
 <script src="js/dgCarousel.1.00.js" type="text/javascript"></script>
-
+<!-- **************************************************************************
+	DEMO01 Specific Javascript and Style 
+	Although it's bad practice to have an inline stylesheet, and to have
+    this type of js in the <head>, it is done to give the user a perspective
+    of the code necessary to generate the carousel. 
+************************************************************************** -->
+<style type="text/css">
+	.dgCarousel li h1
+	{
+		font-size: 13px;
+		font-weight:bold;
+		padding: 1px;
+		margin: 0 0 1px 0;
+		text-align:center;
+	
+	}
+	
+	.dgCarousel li p
+	{
+		padding: 2px;
+		margin: 0 0 1px 0;
+		font-size: 12px;
+	}
+	
+</style>
 
 <script type="text/javascript">
-// The inline script is specific to the demo
-function init()
-{
-	$("#carousel-demo01").dgCarousel({
-		'height':250,
-		'liHeight':215,
-		'width':960
-	});
-}
+	// The inline script is specific to the demo
+	function init()
+	{
+		$("#carousel-demo01").dgCarousel({
+			'height':250,
+			'liHeight':215,
+			'width':960
+		});
+	}
 </script>
 </head>
 
@@ -36,9 +60,11 @@ function init()
         </li>
         <li><img src="images/demo01/02.jpg" alt="Image 02" />
         	<h1>Photo 2</h1>
+            <p>Any text that surpasses the size of the element will be cut off.</p>
         </li>
         <li><img src="images/demo01/03.jpg" alt="Image 03" />
 	        <h1>Photo 3</h1>
+            <p>Link to my <a href="http://www.juarezgorecki.com">blog.</a></p>
         </li>
         <li><img src="images/demo01/04.jpg" alt="Image 04" />
 			<h1>Photo 4</h1>
@@ -46,12 +72,21 @@ function init()
         <li><img src="images/demo01/05.jpg" alt="Image 05" />
         	<h1>Photo 5</h1>
         </li>
-        <li><img src="images/demo01/06.jpg" alt="Image 06" /></li>
-        <li><img src="images/demo01/07.jpg" alt="Image 07" /></li>
-        <li><img src="images/demo01/08.jpg" alt="Image 08" /></li>
-        <li><img src="images/demo01/09.jpg" alt="Image 09" /></li>
-        <li><img src="images/demo01/10.jpg" alt="Image 10" /></li>
-
+        <li><img src="images/demo01/06.jpg" alt="Image 06" />
+	        <h1>Photo 6</h1>
+        </li>
+        <li><img src="images/demo01/07.jpg" alt="Image 07" />
+        	<h1>Photo 7</h1>
+        </li>
+        <li><img src="images/demo01/08.jpg" alt="Image 08" />
+        	<h1>Photo 8</h1>
+        </li>
+        <li><img src="images/demo01/09.jpg" alt="Image 09" />
+	        <h1>Photo 9</h1>
+        </li>        
+        <li><img src="images/demo01/10.jpg" alt="Image 10" />
+        	<h1>Photo 10</h1>
+        </li>
 
     </div>
 
@@ -66,5 +101,6 @@ function init()
     </blockquote>
     <h2>CC Images</h2>
     <p>The images for this demo are liscenced under a non-commercial, share alike creative commons liscence. They were sourced from flickr by <strong>eltpics</strong> and are available under this set: <a href="http://www.flickr.com/photos/eltpics/sets/72157627801907132/">http://www.flickr.com/photos/eltpics/sets/72157627801907132/</a></p></div></div>
+
 </body>
 </html>
